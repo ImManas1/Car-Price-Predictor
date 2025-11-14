@@ -7,7 +7,7 @@ import pandas as pd   # <-- REQUIRED to load df.pkl
 df = pickle.load(open("df.pkl", "rb"))
 pipe = pickle.load(open("pipe.pkl", "rb"))
 
-st.title("Car Price Predictor App 🚗💰")
+st.title("Car Price Predictor App ")
 
 company = st.selectbox("Car Brand", df['Company'].unique())
 fuel = st.selectbox("Fuel Type", df['fuel'].unique())
